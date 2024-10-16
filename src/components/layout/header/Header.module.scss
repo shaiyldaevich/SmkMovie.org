@@ -1,0 +1,129 @@
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 10px 0;
+  width: 100%;
+  backdrop-filter: blur(4px);
+  transition: 0.4s;
+  &.active {
+    background: #04152d;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      .logo {
+        h1 {
+          font-size: 32px;
+        }
+      }
+    }
+    .right {
+      .nav {
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 25px;
+          li {
+            list-style: none;
+            .link {
+              color: rgb(255, 255, 255);
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 16px;
+              letter-spacing: 0%;
+              transition: 0.2s;
+            }
+            .active {
+              color: #9336fd;
+            }
+          }
+          button {
+            padding: 5px 20px;
+            background: green;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            &:hover .stars {
+              display: block;
+              filter: drop-shadow(0 0 10px #fffdef);
+            }
+          }
+        }
+        .mobileMenu {
+          font-size: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+    .openMenu {
+      position: fixed;
+      top: 50px;
+      right: 80px;
+      width: 120px;
+      height: 150px;
+      border-radius: 10px;
+      display: flex;
+      z-index: 888;
+      align-items: start;
+      justify-content: center;
+      background: rgb(66, 64, 66);
+      button {
+        background: none;
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px 5px 0 0;
+        border-bottom: 1px solid white;
+        &:hover {
+          padding: 5px 28px;
+          background: grey;
+        }
+      }
+    }
+
+    .mobile {
+      position: fixed;
+      top: 56px;
+      left: 0;
+      width: 100%;
+      height: 140px;
+      background-color: #04152d;
+      opacity: 0;
+      transform: translateY(-100px);
+      transition: opacity 300ms ease, transform 300ms ease;
+      pointer-events: none;
+
+      &.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+      .white {
+        width: 100%;
+        height: 0.1px;
+        background: white;
+      }
+      .movieTv {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        a {
+          width: 100%;
+          font-size: 24px;
+          padding: 10px 20px;
+          color: white;
+          font-weight: 500;
+          &:hover {
+            color: #9336fd;
+          }
+        }
+      }
+    }
+  }
+}
