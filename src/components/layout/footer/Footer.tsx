@@ -9,7 +9,7 @@ const Footer = () => {
         <div className={scss.infoText}>
           <p>
             {" "}
-            Ai-Movie - a unique website providing fascinating information about
+            Smk-Movie - a unique website providing fascinating information about
             movies and TV shows. Here you can discover all the necessary details
             about your favorite films, actors, directors, ratings, and much
             more. Ai-Movie boasts a stylish and intuitive interface that makes
