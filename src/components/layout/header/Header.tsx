@@ -43,7 +43,7 @@ const Header = () => {
           <div className={scss.left}>
             <div className={scss.logo}>
               <Link href="/">
-                <h1>Smk-Movie</h1>
+                <h1>Salam-Movie</h1>
               </Link>
             </div>
           </div>

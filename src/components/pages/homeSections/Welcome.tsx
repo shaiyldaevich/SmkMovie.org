@@ -28,8 +28,8 @@ const Welcome = () => {
     const typed = new Typed(".multiple-text", {
       strings: [
         "Get Ready for Cinematic Bliss",
-        "Welcome to SmkMovie - Enjoy the Show!",
-        "Discover Movie Magic at SmkMovie",
+        "Welcome to SalamMovie - Enjoy the Show!",
+        "Discover Movie Magic at Salam-Movie",
       ],
       typeSpeed: 50,
       backSpeed: 10,
